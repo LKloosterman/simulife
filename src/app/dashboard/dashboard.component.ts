@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.game_data_service.setGameDate(new Date("2020-01-01T00:00:00"));
   }
 
   onDayEnd(): void {
