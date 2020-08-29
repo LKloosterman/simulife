@@ -20,4 +20,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDayEnd(): void {
+    this.game_date.setDate(this.game_date.getDate() + 1)
+
+    this.game_data_service.setGameDate(this.game_date);
+  }
+
 }
