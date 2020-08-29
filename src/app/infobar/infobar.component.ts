@@ -9,7 +9,7 @@ import { GameDataService } from '../game-data.service';
 })
 export class InfobarComponent implements OnInit {
 
-  private game_date: Date;
+  game_date: Date;
 
   constructor(private game_data_service: GameDataService) {
     this.game_data_service.getGameDateObservable().subscribe((new_date) => {
@@ -18,7 +18,6 @@ export class InfobarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.game_data_service.setGameDate(new Date("2020-01-01T00:00:00"));
   }
 
 }
