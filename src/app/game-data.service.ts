@@ -9,7 +9,7 @@ export class GameDataService {
   private game_date: Subject<Date>;
 
   constructor() {
-    this.game_date = new Subject();
+    this.game_date = new Subject<Date>();
   }
 
   public getGameDateObservable(): Observable<Date> {
@@ -17,7 +17,7 @@ export class GameDataService {
   }
 
   public setGameDate(new_date: Date): void {
-    this.game_date.next(new_date);
+    this.game_date.next(new Date(new_date));
   }
 
 }
