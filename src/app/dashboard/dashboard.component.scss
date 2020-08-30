@@ -1,0 +1,16 @@
+#end_day_button {
+  background: #FFFFFF;
+  border: 2px solid #82B1FF;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #82B1FF;
+  border-radius: 6px;
+  outline: none;
+}
+
+#end_day_button:hover {
+  background: #82B1FF;
+  color: #FFFFFF;
+  font-weight: bold;
+}
