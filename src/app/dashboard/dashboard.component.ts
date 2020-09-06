@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { GameDataService } from '../game-data.service';
+import { getLocaleDateTimeFormat } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,7 +19,16 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.game_data_service.setGameDate(new Date("2020-01-01T00:00:00"));
+    let game_date = new Date();
+
+    game_date.setHours(0);
+    game_date.setMinutes(0);
+    game_date.setSeconds(0);
+
+    game_date.setMonth(Math.floor(Math.random() * 12) + 1);
+    game_date.setDate(Math.floor(Math.random() * 30) + 1);
+
+    this.game_data_service.setGameDate(game_date);
   }
 
   onDayEnd(): void {
