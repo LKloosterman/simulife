@@ -20,3 +20,9 @@
   background: #90CAF9;
   border: 2px solid #90CAF9;
 }
+
+@media screen and (max-width: 800px) {
+  #end_day_button {
+    width: 100%;
+  }
+}
