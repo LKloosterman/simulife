@@ -1,18 +1,18 @@
 #end_day_button {
-  background: #FFFFFF;
+  background: #82B1FF;
+  color: #FFFFFF;
   border: 2px solid #82B1FF;
   padding: 5px 10px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #82B1FF;
+  font-weight: bold;
   border-radius: 6px;
   outline: none;
+  box-shadow: 0 1px 2px #808080;
 }
 
 #end_day_button:hover {
-  background: #82B1FF;
-  color: #FFFFFF;
-  font-weight: bold;
+  cursor: pointer;
 }
 
 #end_day_button:active {
