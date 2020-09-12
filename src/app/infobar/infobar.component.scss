@@ -1,0 +1,22 @@
+#infobar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 6px #C0C0C0;
+  background: #FFFFFF;
+}
+
+#date-section {
+  display: flex;
+}
+
+#date-section > h3 {
+  margin: 0;
+  font-weight: 400;
+}

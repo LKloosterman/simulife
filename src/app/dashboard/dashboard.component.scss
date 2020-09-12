@@ -1,0 +1,29 @@
+#end_day_button {
+  background: #82B1FF;
+  color: #FFFFFF;
+  width: 150px;
+  border: 2px solid #82B1FF;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 1px 2px #808080;
+}
+
+#end_day_button:hover {
+  cursor: pointer;
+}
+
+#end_day_button:active {
+  padding: 5px 9px 5px 11px;
+  background: #90CAF9;
+  border: 2px solid #90CAF9;
+}
+
+@media screen and (max-width: 800px) {
+  #end_day_button {
+    width: 100%;
+  }
+}
